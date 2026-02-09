@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Recipes</title>
+    <link rel="stylesheet" href="style/all-recipes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    </head>
+    <body id="all-recipes">
+        <header>
+            <h1>Zaika</h1>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li>
+                        <select id="country">
+                            <option value="" disabled selected>India</option>
+                        </select>
+                    </li>
+                    <li>
+                        <select id="stateDropdown" name="state">
+                            <option value="" disabled selected>State</option>
+                            <option value="State" selected>All States</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="West Bengal">West Bengal</option>
+                        </select>
+                    </li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="help.html">Help</a></li>
+                    <!-- Wrap the user icon in an anchor tag to link to profile.html -->
+                    <li><a href="profile.html"><img src="images/person.png" id="userIcon" class="person-logo" alt="Person"></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <main>
+                    <div class="search-bar-container">
+                        <input type="text" class="search-bar" id="searchBar" placeholder="Search your recipes...">
+                        <button id="searchIcon" class="search-icon"></button>
+                    </div>
+                    <!-- Rest of your content goes here -->
+                </main>
+            </section>
+    <!-- Recipe grid to show all recipes -->
+    <section class="content">
+        <section class="featured-recipes">
+            <a href="food-front/biryani.html" class="recipe-card" data-name="Biryani" data-state="Andhra Pradesh">
+                <img src="images/biryani.jpg" alt="Biryani" class="recipe-image">
+                <div class="recipe-details">
+                    <h3>Biryani</h3>
+                    <p>Rich and creamy chicken curry.</p>
+                </div>                    
+            </a>                
+            <a href="food-front/butter-chicken.html" class="recipe-card" data-name="Butter Chicken" data-state="Punjab">
+                <img src="images/butter-chicken.jpg" alt="Butter Chicken" class="recipe-image">
+                <div class="recipe-details">
+                    <h3>Butter Chicken</h3>
+                    <p>Rich and creamy chicken curry.</p>
+                </div>
+            </a>
+            <a href="food-front/samosa.html" class="recipe-card" data-name="Samosa" data-state="Uttar Pradesh">
+                <img src="images/samosa.jpg" alt="Samosa" class="recipe-image" >
+                <div class="recipe-details">
+                    <h3>Samosa</h3>
+                    <p>Fried pastry with savory filling.</p>
+                </div>
+            </a>
+            <a href="food-front/pulihora.html" class="recipe-card" data-name="pulihora" data-state="Andhra Pradesh">
+                <img src="images/pulihora.jpg" alt="vada" class="recipe-image">
+                <div class="recipe-details">
+                    <h3>Pulihora</h3>
+                    <p>Aromatic and flavorful rice dish.</p>
+                </div>
+            </a>
+            <a href="food-front/idli.html" class="recipe-card" data-name="idli" data-state="Tamil Nadu">
+                <img src="images/idli.jpg" alt="idli" class="recipe-image">
+                <div class="recipe-details">
+                    <h3>Idli</h3>
+                    <p>Aromatic and flavorful rice dish.</p>
+                </div>
+            </a>
+            <a href="food-front/rasabali.html" class="recipe-card" data-name="rasabali" data-state="Odisha">
+                <img src="images/rasabali.jpg" alt="rasabali" class="recipe-image">
+                <div class="recipe-details">
+                    <h3>Rasabali</h3>
+                    <p>Aromatic and flavorful rice dish.</p>
+                </div>
+            </a>
+            <a href="food-front/dosa.html" class="recipe-card" data-name="dosa" data-state="Tamil Nadu">
+                <img src="images/dosa.jpg" alt="dosa" class="recipe-image">
+                <div class="recipe-details">
+                    <h3>Dosa</h3>
+                    <p>Aromatic and flavorful rice dish.</p>
+                </div>
+            </a>
+            <a href="food-front/arisapitha.html" class="recipe-card" data-name="arisapitha" data-state="Odisha">
+                <img src="images/Arisapitha.jpg" alt="arisapitha" class="recipe-image">
+                <div class="recipe-details">
+                    <h3>Arisa Pitha</h3>
+                    <p>Aromatic and flavorful rice dish.</p>
+                </div>
+            </a>
+            <a href="food-front/chhenapoda.html" class="recipe-card" data-name="chhenapoda" data-state="Odisha">
+                <img src="images/chhenapoda.jpeg" alt="chhenapoda" class="recipe-image">
+                <div class="recipe-details">
+                    <h3>Chhena Poda</h3>
+                    <p>Aromatic and flavorful rice dish.</p>
+                </div>
+            </a>
+            <a href="food-front/chitaupitha.html" class="recipe-card" data-name="chitaupitha" data-state="Odisha">
+                <img src="images/chitaupitha.jpeg" alt="chitaupitha" class="recipe-image">
+                <div class="recipe-details">
+                    <h3>Chitau Pitha</h3>
+                    <p>Aromatic and flavorful rice dish.</p>
+                </div>
+            </a>
+            <a href="food-front/andhrachicken.html" class="recipe-card" data-name="andhrachicken" data-state="Andhra Pradesh">
+                <img src="images/andhrachicken.jpeg" alt="andhrachicken" class="recipe-image">
+                <div class="recipe-details">
+                    <h3>Andhra Chicken</h3>
+                    <p>Aromatic and flavorful rice dish.</p>
+                </div>
+            </a>
+            <a href="food-front/dahibara.html" class="recipe-card" data-name="dahibara" data-state="Odisha">
+                <img src="images/dahibara.jpeg" alt="dahibara" class="recipe-image">
+                <div class="recipe-details">
+                    <h3>Dahi Bara Aloo Dum</h3>
+                    <p>Aromatic and flavorful rice dish.</p>
+                </div>
+            </a>
+            <a href="food-front/littichokha.html" class="recipe-card" data-name="littichokha" data-state="Bihar">
+                <img src="images/littichokha.jpg" alt="littichokha" class="recipe-image">
+                <div class="recipe-details">
+                    <h3>Litti Chokha</h3>
+                    <p>Aromatic and flavorful rice dish.</p>
+                </div>
+            </a>
+            <a href="food-front/malpua.html" class="recipe-card" data-name="malpua" data-state="Odisha">
+                <img src="images/malpua.jpg" alt="malpua" class="recipe-image">
+                <div class="recipe-details">
+                    <h3>Malpua</h3>
+                    <p>Aromatic and flavorful rice dish.</p>
+                </div>
+            </a>
+            <a href="food-front/pyaazkachori.html" class="recipe-card" data-name="pyaazkachori" data-state="Rajasthan">
+                <img src="images/pyaazkachori.jpg" alt="pyaazkachori" class="recipe-image">
+                <div class="recipe-details">
+                    <h3>Pyaaz Kachori</h3>
+                    <p>Aromatic and flavorful rice dish.</p>
+                </div>
+            </a>
+        </a>
+        <a href="food-front/dalbatti.html" class="recipe-card" data-name="dalbatti" data-state="Rajasthan">
+            <img src="images/dalbatti.jpg" alt="dalbatti" class="recipe-image">
+            <div class="recipe-details">
+                <h3>Dal Batti Churma</h3>
+                <p>Aromatic and flavorful rice dish.</p>
+            </div>
+        </a>
+        <a href="food-front/machharjhol.html" class="recipe-card" data-name="machharjhol" data-state="West Bengal">
+            <img src="images/machharjhol.jpg" alt="machharjhol" class="recipe-image">
+            <div class="recipe-details">
+                <h3>Machhar Jhol</h3>
+                <p>Aromatic and flavorful rice dish.</p>
+            </div>
+        </a>
+        <a href="food-front/mishtidoi.html" class="recipe-card" data-name="mishtidoi" data-state="West Bengal">
+            <img src="images/mishtidoi.jpg" alt="mishtidoi" class="recipe-image">
+            <div class="recipe-details">
+                <h3>Mishti Doi</h3>
+                <p>Aromatic and flavorful rice dish.</p>
+            </div>
+        </a>
+        <a href="food-front/dhokla.html" class="recipe-card" data-name="dhokla" data-state="Gujarat">
+            <img src="images/Dhokla.jpg" alt="dhokla" class="recipe-image">
+            <div class="recipe-details">
+                <h3>Dhokla</h3>
+                <p>Aromatic and flavorful rice dish.</p>
+            </div>
+        </a>
+        <a href="food-front/lassi.html" class="recipe-card" data-name="lassi" data-state="Punjab">
+            <img src="images/Lassi.jpeg" alt="lassi" class="recipe-image">
+            <div class="recipe-details">
+                <h3>Lassi</h3>
+                <p>Aromatic and flavorful rice dish.</p>
+            </div>
+        </a>
+        <a href="food-front/pani_puri.html" class="recipe-card" data-name="pani_puri" data-state="West Bengal">
+            <img src="images/pani_puri.jpg" alt="pani_puri" class="recipe-image">
+            <div class="recipe-details">
+                <h3>Pani puri</h3>
+                <p>Aromatic and flavorful rice dish.</p>
+            </div>
+        </a>
+        <a href="food-front/sarso_da_saag.html" class="recipe-card" data-name="sarso_da_saag" data-state="Punjab">
+            <img src="images/Sarso da Saag with Makki di Roti.jpeg" alt="sarso_da_saag" class="recipe-image">
+            <div class="recipe-details">
+                <h3>Sarso Da Saag</h3>
+                <p>Aromatic and flavorful rice dish.</p>
+            </div>
+        </a>
+        <a href="food-front/sattu_paratha.html" class="recipe-card" data-name="sattu_paratha" data-state="Bihar">
+            <img src="images/sattu_paratha.jpg" alt="sattu_paratha" class="recipe-image">
+            <div class="recipe-details">
+                <h3>Sattu Paratha</h3>
+                <p>Aromatic and flavorful rice dish.</p>
+            </div>
+        </a>
+        <a href="food-front/thepla.html" class="recipe-card" data-name="thepla" data-state="Gujarat">
+            <img src="images/Thepla.jpg" alt="thepla" class="recipe-image">
+            <div class="recipe-details">
+                <h3>Thepla</h3>
+                <p>Aromatic and flavorful rice dish.</p>
+            </div>
+        </a>
+
+            <!-- Add more recipe cards as needed -->
+        </section>
+    </main> 
+        <footer>
+            <p>&copy; 2024 Zaika. All rights reserved.</p>
+        </footer>
+        <script src="script/script.js"></script>
+    </body>
+    </html>

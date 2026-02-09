@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaika - Home</title>
+    <link rel="stylesheet" href="style/profile.css">
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Zaika</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="help.html">Help</a></li>
+                <!-- Wrap the user icon in an anchor tag to link to profile.html -->
+                <li><a href="profile.html"><img src="images/person.png" id="userIcon" class="person-logo" alt="Person"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Profile Form Section -->
+        <section class="profile-card" id="profileFormSection">
+            <div class="image-container">
+                <img src="images/profile.jpg" alt="User Image" class="profile-image">
+            </div>
+            <div class="form-container">
+                <h2>PROFILE</h2>
+                <form id="userProfileForm">
+                    <div class="input-group">
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-group-inline">
+                        <input type="number" id="age" name="age" placeholder="Age" required>
+                        <select id="gender" name="gender" required>
+                            <option value="" disabled selected>Gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="input-group-inline">
+                        <select id="countryCode" name="countryCode" class="country-code" required>
+                            <option value="+91" selected>+91 (India)</option>
+                            <!-- Add more country codes as needed -->
+                        </select>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                    </div>
+                    <div class="input-group-inline">
+                        <select id="country" name="country" disabled>
+                            <option value="India" selected>India</option>
+                        </select>
+                        <select id="state" name="state" required>
+                            <option value="" disabled selected>Select your state</option>
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="West Bengal">West Bengal</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <button type="submit">Add Profile</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Display Profile Section -->
+        <section class="profile-card" id="displayProfileSection" style="display: none;">
+            <div class="image-container">
+                <img src="images/profile.jpg" alt="User Image" class="profile-image">
+            </div>
+            <div class="profile-details">
+                <h2>Your Profile</h2>
+                <p><strong>Name:</strong> <span id="displayName"></span></p>
+                <p><strong>Age:</strong> <span id="displayAge"></span></p>
+                <p><strong>Gender:</strong> <span id="displayGender"></span></p>
+                <p><strong>Phone:</strong> <span id="displayPhone"></span></p>
+                <p><strong>State:</strong> <span id="displayState"></span></p>
+                <button id="deleteProfileButton">Delete Profile</button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Zaika. All rights reserved.</p>
+    </footer>
+    <script src="script/profile.js"></script>
+</body>
+</html>

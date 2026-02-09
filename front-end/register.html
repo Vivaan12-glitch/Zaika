@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaika - Register</title>
+    <link rel="stylesheet" href="style/register.css"> <!-- Link to the new CSS file -->
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+</head>
+<body id="registerPage">
+    <header>
+        <h1>Zaika</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="register-card">
+            <div class="register-image">
+                <img src="images/register.jpg" alt="Profile Image">
+            </div>
+            <div class="register-form">
+                <h2>Register</h2>
+                <form id="registerForm">
+                    <label for="email">Email ID:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    
+                    <label for="password">Password:</label>
+                    <div class="password-container">
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                        <span class="toggle-password" id="togglePassword"></span>
+                    </div>
+
+                    <button type="submit" class="register-btn">Register</button>
+                    <p id="message" class="message default-message">Already a user? <a href="login.html" id="loginLink">Login</a></p>
+                </form>
+                
+                <!-- Social media login options -->
+                <div class="social-login">
+                    <p>Or register with:</p>
+                    <div class="social-icons">
+                        <a href="http://localhost/zaika/back-end/login_google.php">
+                            <img src="images/google.png" alt="Google">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Zaika. All rights reserved.</p>
+    </footer>
+
+    <script src="script/script.js"></script>
+</body>
+</html>

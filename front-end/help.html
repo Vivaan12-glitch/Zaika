@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help - Zaika</title>
+    <link rel="stylesheet" href="style/help.css">
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+</head>
+<body id="helpPage">
+    <header>
+        <h1>Zaika</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="help.html">Help</a></li>
+                <!-- Wrap the user icon in an anchor tag to link to profile.html -->
+                <li><a href="profile.html"><img src="images/person.png" id="userIcon" class="person-logo" alt="Person"></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="help-card">
+            <div class="help-image">
+                <img src="images/help.jpg" alt="Help Image">
+            </div>
+            <div class="help-section">
+                <h2>How can we assist you?</h2>
+                <form id="helpForm" action="send_help.php" method="POST">
+                    <!-- Email input field -->
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+                    <!-- Name input field -->
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                    <!-- Problem description text area -->
+                    <label for="problem">Describe Your Problem</label>
+                    <textarea id="problem" name="problem" placeholder="Describe the issue you're facing..." required></textarea>
+                    
+                    <!-- Submit button -->
+                    <button type="submit" id="submitHelp">Send</button>
+                </form>                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Zaika. All rights reserved.</p>
+    </footer>
+
+    <script src="script/help.js"></script> <!-- JS to handle form submission -->
+</body>
+</html>
