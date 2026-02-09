@@ -1,0 +1,379 @@
+/* General styles */
+body {
+    font-family: 'Solway', serif;
+    margin: 0;
+    padding: 0; /*jknkjn */
+    background-color: floralwhite;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 60px;
+}
+#loginPage { 
+    background: url('../images/Home.png') no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+}
+header {
+    background-color:black;
+    color: white;
+    padding: 7px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: smaller;
+}
+
+#loginPage header {
+    background-color:rgba(0, 0, 0, 0.556);
+    color: white;
+    padding: 7px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: smaller;
+}
+
+/* Style for the Login Button */
+.login-button-container {
+    position: absolute;
+    top: 80px; /* Adjust based on your header height */
+    right: 20px;
+}
+
+.auth-button  {
+    display: inline-block;
+    padding: 5px 23px;
+    border: 2px solid orange;
+    border-radius: 8px;
+    background-color: transparent;
+    color: orange;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Solway', serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.auth-button:hover {
+    background-color: orange;
+    color: white; /* Text turns white when hovered */
+}
+
+
+
+/* Existing styles */
+
+header h1 {
+    font-family: 'Berkshire Swash', cursive;
+    margin: 0;
+    font-size: 3em; /* Adjust size as needed */
+}
+
+/* Add styles for the person logo */
+.person-logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+/* Add styles for the search icon */
+.search-icon {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    margin-left: -40px; /* Adjust based on your design */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+
+nav ul li select {
+    font-family: 'Solway', serif;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 width%3D%2210%22 height%3D%225%22 viewBox%3D%220 0 10 5%22%3E%3Cpath fill%3D%22%23fff%22 d%3D%22M0 0l5 5 5-5z%22/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 30px;
+}
+
+nav ul li select option {
+    color: black;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    padding-right: 33px;
+}
+
+header .person-logo {
+    margin-left: 20px; /* Adjust as needed */
+}
+
+.hero {
+    background: url('../images/Home.png') no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 43px 10px; /* Adjust to make space for the header */
+    padding-bottom: 50px;
+    color: white;
+}
+
+.hero h2 {
+     font-family: 'Solway', serif;
+     margin: 0;
+     font-size: 2.5em; /* Adjust size as needed */
+ }
+
+
+/* Styles for the search bar */
+/* Search Bar Container */
+.search-bar-container {
+    position: relative; /* Allows for absolute positioning of the search icon */
+    text-align: center;
+    padding-top: 145px;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    padding-right: 40px; /* Add extra space on the right to accommodate the icon */
+    border: 2px solid #ddd;
+    border-radius: 100px;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's width and height */
+}
+
+.search-bar::placeholder {
+    color: #888;
+}
+
+/* Search Icon Styling */
+.search-bar-container .search-icon {
+    position: relative;
+    right: 15px;
+    top: 18px;
+    transform: translateY(-50%);
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
+    background: url('../images/search.png') no-repeat center;
+    background-size: contain;
+    border: none;
+    background-color: transparent; /* Ensure the button background is transparent */
+}
+
+/* General styles for the recipe cards */
+.featured-recipes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    padding: 20px;
+    padding-top: 40px;
+}
+
+.recipe-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+    text-decoration: none;  /* Ensure links don't have underlines */
+    color: inherit;  /* Inherit text color */
+}
+
+.recipe-card:hover {
+    transform: translateY(-15px);
+}
+
+.recipe-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-details {
+    padding: 15px;
+}
+
+.recipe-details h3 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.recipe-details p {
+    font-family: 'Solway', serif;
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+.view-all-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.view-all-button {
+    background-color: #D9534F; /* Dark pink */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.view-all-button:hover {
+    background-color: #b03a37; /* Darker pink on hover */
+}
+
+
+footer {
+    background-color: rgba(55, 52, 52, 0.8);
+    color: #333f;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Login form styles */
+.login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    padding: 50px;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    text-align: center;
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.login-form input::placeholder {
+    color: #888;
+}
+
+.login-form .password-container {
+    position: relative;
+}
+
+.login-form .toggle-password {
+    position: absolute;
+    right: 20px;
+    top: 43%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background: url(eye.png) no-repeat center;
+    background-size: contain;
+    opacity: 0.6;
+}
+
+.login-form .toggle-password:hover {
+    opacity: 1;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #f0b27a;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-form button:hover {
+    background-color: #e08e55;
+}
+
+.message{
+    text-align: center;
+    color: red;
+}
+
+/* Styles for messages in the registration form */
+.message a {
+    color: rgb(241, 98, 4); /* Default link color for "Already a user? Login" */
+}
+
+.error-message {
+    color: red; /* Color for "User already exists. Please Login" */
+}
+
+.default-message {
+    color:black; /* Color for the default message */
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machhar Jhol - Zaika</title>
+    <link rel="stylesheet" href="../style/recipes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body id="machhar-jhol">
+    <header class="header">
+        <h1 class="header-title">Zaika</h1>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../help.html">Help</a></li>
+                <li><a href="../profile.html"><img src="../images/person.png" id="userIcon" class="person-logo" alt="Person"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="recipe-detail">
+            <div class="recipe-card">
+                <div class="like-container">
+                    <i class="fa fa-heart like-btn"></i>
+                </div>
+                <div class="card-image">
+                    <img src="../images/machharjhol.jpg" alt="Machhar Jhol">
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Machhar Jhol</h3>
+                    <p class="card-description">Machhar Jhol is a flavorful Bengali fish curry made with fresh fish and a blend of spices, served with rice for a hearty meal.</p>
+                    <p class="card-time">Time: 45 minutes</p>
+                    <p class="card-protein">
+                        Protein:
+                        <ul>
+                            <li>Fish (500g) provides about 100g of protein.</li>
+                            <li>Vegetables (optional) add additional protein.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="details-card">
+                <h3 class="details-title">Recipe Details</h3>
+                <div class="details-section">
+                    <label for="people">Number of People:</label>
+                    <select id="people" name="people" onchange="updateIngredients()">
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+                <div class="details-section">
+                    <h3>Ingredients</h3>
+                    <ul id="ingredients-list">
+                        <!-- Ingredients will be populated here by JavaScript -->
+                    </ul>
+                </div>
+                
+                <div class="details-section">
+                    <div class="recipe-header">
+                        <h2>Steps to Make Machhar Jhol:</h2>
+                        <div class="audio-container">
+                            <p class="audio-caption">Listen to the instructions here:</p>
+                            <audio controls>
+                                <source src="../audio/machar_jhol.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <ol>
+                        <li>Marinate 500g of fish with salt and turmeric. Set aside for about 15-20 minutes.</li>
+                        <li>In a large pan or kadhai, heat the mustard oil until it starts to smoke. Reduce the heat to medium.</li>
+                        <li>Carefully add the marinated fish pieces to the hot oil. Fry until they are golden brown on both sides. Remove and set aside.</li>
+                        <li>In the same oil, add the bay leaves and whole garam masala. Sauté for a minute.</li>
+                        <li>Add the sliced onions and cook until they turn golden brown.</li>
+                        <li>Stir in the ginger and garlic paste. Cook for 2-3 minutes until the raw smell disappears.</li>
+                        <li>Add the chopped tomatoes, turmeric powder, red chili powder, coriander powder, cumin powder, and slit green chilies. Cook until the tomatoes are soft and the oil starts to separate.</li>
+                        <li>Pour in enough water to make a gravy (about 1-2 cups, depending on your preference). Bring it to a boil.</li>
+                        <li>Gently add the fried fish pieces to the boiling gravy. If using, add the cubed potatoes at this stage. Simmer for 10-15 minutes, allowing the fish to absorb the flavors.</li>
+                        <li>Taste and adjust salt as needed. If using, add Panch Phoron for extra flavor.</li>
+                        <li>Once done, garnish with chopped coriander leaves. Serve hot with steamed rice.</li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+        <!-- Recipe Recommendations Section -->
+        <div class="recommendations">
+            <h2>You Can Also Try</h2>
+            <div class="recommendation-grid">
+                <a href="../recipe1.html" class="recommendation-item">
+                    <img src="../images/pakora.jpg" alt="Recipe 1">
+                </a>
+                <a href="../recipe2.html" class="recommendation-item">
+                    <img src="../images/kachori.jpg" alt="Recipe 2">
+                </a>
+                <a href="../recipe3.html" class="recommendation-item">
+                    <img src="../images/dhokla.jpg" alt="Recipe 3">
+                </a>
+                <a href="../recipe4.html" class="recommendation-item">
+                    <img src="../images/poha.jpg" alt="Recipe 4">
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Zaika. All rights reserved.</p>
+    </footer>
+    <script src="../script/food-script/machhar_jhol.js"></script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biryani - Zaika</title>
+    <link rel="stylesheet" href="../style/recipes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body id="biryani">
+    <header class="header">
+        <h1 class="header-title">Zaika</h1>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../help.html">Help</a></li>
+                <li><a href="../profile.html"><img src="../images/person.png" id="userIcon" class="person-logo" alt="Person"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="recipe-detail">
+            <div class="recipe-card">
+                <div class="like-container">
+                    <i class="fa fa-heart like-btn"data-recipe-id="1"></i>
+                </div>
+                <div class="card-image">
+                    <img src="../images/biryani.jpg" alt="Biryani">
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Biryani</h3>
+                    <p class="card-description">Biryani is a flavorful and aromatic rice dish cooked with fragrant spices, tender meat or vegetables, and often layered with saffron-infused rice.</p>
+                    <p class="card-time">Time: 45 minutes</p>
+                    <p class="card-protein">
+                        Protein:
+                        <ul>
+                            <li>Chicken (1kg) provides around 230g of protein.</li>
+                            <li>Yogurt (if used in marinade) adds 10g of protein per 100g.</li>
+                            <li>Lentils or chickpeas (if added) provide 9g of protein per 100g.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="details-card">
+                <h3 class="details-title">Recipe Details</h3>
+                <div class="details-section">
+                    <label for="people">Number of People:</label>
+                    <select id="people" name="people" onchange="updateIngredients()">
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+                <div class="details-section">
+                    <h3>Ingredients</h3>
+                    <ul id="ingredients-list">
+                        <!-- Ingredients will be populated here by JavaScript -->
+                    </ul>
+                </div>
+                
+                <div class="details-section">
+                    <div class="recipe-header">
+                        <h2>Steps to Make Biryani:</h2>
+                        <div class="audio-container">
+                            <p class="audio-caption">Listen to the instructions here:</p>
+                            <audio controls>
+                                <source src="../audio/audio.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <ol>
+                        <li>In a large bowl, combine 1 cup yogurt, 2 tablespoons ginger-garlic paste, 2 tablespoons biryani masala, 1 tablespoon red chili powder, 1/2 teaspoon turmeric powder, 1 teaspoon garam masala, salt to taste, and 2 tablespoons lemon juice.</li>
+                        <li>Mix well to form a smooth marinade.</li>
+                        <li>Add 1 kg chicken pieces to the marinade and coat them thoroughly.</li>
+                        <li>Cover the bowl and refrigerate the marinated chicken for at least 2 hours, or overnight for best results.</li>
+                        <li>Rinse 2 cups basmati rice under cold water until the water runs clear, then soak in water for 30 minutes. Drain.</li>
+                        <li>In a large pot, bring 4 cups of water to a boil. Add 2-3 green cardamom pods, 4-5 cloves, 1 bay leaf, 1 cinnamon stick, and 1 teaspoon salt.</li>
+                        <li>Add the soaked and drained rice to the boiling water and cook until it is 70% cooked (the rice should still be slightly firm). Drain the rice and set it aside.</li>
+                        <li>Heat 2 tablespoons of ghee or oil in a large, heavy-bottomed pan over medium heat. Add 2 large sliced onions and cook until they turn golden brown.</li>
+                        <li>Add 2 chopped tomatoes and cook until they become soft and start to break down.</li>
+                        <li>Add the marinated chicken to the pan and cook, stirring occasionally, until the chicken is cooked through and the oil begins to separate from the mixture (about 20-30 minutes).</li>
+                        <li>Stir in 1/2 cup chopped mint leaves and a handful of chopped coriander leaves.</li>
+                        <li>In a large, heavy-bottomed pot, spread a layer of the cooked chicken mixture. Add a layer of the partially cooked rice over the chicken.</li>
+                        <li>Drizzle half of the saffron milk (1/4 cup) over the rice. Repeat the layers with the remaining chicken and rice, finishing with a layer of rice.</li>
+                        <li>Drizzle the remaining saffron milk over the top layer of rice. Optional: Sprinkle some fried onions on top for added flavor and garnish.</li>
+                        <li>Cover the pot with a tight-fitting lid. Seal the edges with dough if necessary to prevent steam from escaping. Cook on low heat for 20-30 minutes to allow the flavors to meld and the rice to finish cooking.</li>
+                        <li>Turn off the heat and let the biryani rest for 10 minutes before opening the lid.</li>
+                        <li>Gently fluff the biryani with a fork to mix the layers. Serve hot with raita, salad, or pickles.</li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+        <!-- Recipe Recommendations Section -->
+<div class="recommendations">
+    <h2>You Can Also Try</h2>
+    <div class="recommendation-grid">
+        <a href="recipe1.html" class="recommendation-item">
+            <img src="../images/andhrachiken.jpeg" alt="Recipe 1">
+        </a>
+        <a href="recipe2.html" class="recommendation-item">
+            <img src="../images/dahibara.jpeg" alt="Recipe 2">
+        </a>
+        <a href="recipe3.html" class="recommendation-item">
+            <img src="../images/chhenapoda.jpeg" alt="Recipe 3">
+        </a>
+        <a href="recipe4.html" class="recommendation-item">
+            <img src="../images/rasabali.jpg" alt="Recipe 4">
+        </a>
+    </div>
+</div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Zaika. All rights reserved.</p>
+    </footer>
+    <script src="../script/food-script/biryani.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Litti Chokha - Zaika</title>
+    <link rel="stylesheet" href="../style/recipes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body id="litti-chokha">
+    <header class="header">
+        <h1 class="header-title">Zaika</h1>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../help.html">Help</a></li>
+                <li><a href="../profile.html"><img src="../images/person.png" id="userIcon" class="person-logo" alt="Person"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="recipe-detail">
+            <div class="recipe-card">
+                <div class="like-container">
+                    <i class="fa fa-heart like-btn"></i>
+                </div>
+                <div class="card-image">
+                    <img src="../images/littichokha.jpg" alt="Litti Chokha">
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Litti Chokha</h3>
+                    <p class="card-description">Litti Chokha is a traditional dish from Bihar, India, consisting of round wheat balls stuffed with spiced sattu (roasted gram flour) and served with chokha, a spicy mashed mixture of eggplant, tomato, and potatoes.</p>
+                    <p class="card-time">Time: 1.5 hours</p>
+                    <p class="card-protein">
+                        Protein:
+                        <ul>
+                            <li>Sattu (1 cup) provides approximately 25g of protein.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="details-card">
+                <h3 class="details-title">Recipe Details</h3>
+                <div class="details-section">
+                    <label for="people">Number of People:</label>
+                    <select id="people" name="people" onchange="updateIngredients()">
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+                <div class="details-section">
+                    <h3>Ingredients</h3>
+                    <ul id="ingredients-list">
+                        <!-- Ingredients will be populated here by JavaScript -->
+                    </ul>
+                </div>
+                
+                <div class="details-section">
+                    <div class="recipe-header">
+                        <h2>Steps to Make Litti Chokha:</h2>
+                        <div class="audio-container">
+                            <p class="audio-caption">Listen to the instructions here:</p>
+                            <audio controls>
+                                <source src="../audio/litti_chokha.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <ol>
+                        <li><strong>Prepare the Dough:</strong> In a mixing bowl, combine 2 cups of whole wheat flour, 1 teaspoon of salt, and 3 tablespoons of ghee. Gradually add water and knead to form a smooth and firm dough. Cover it with a damp cloth and let it rest for 30 minutes.</li>
+                        <li><strong>Make the Filling:</strong> In another bowl, mix 1 cup of sattu, 1 finely chopped onion, 2-3 finely chopped green chilies, 1-inch grated ginger, and 4-5 minced garlic cloves. Add the juice of 1 lemon, a handful of chopped coriander leaves, salt to taste, 1/2 teaspoon of ajwain, and 1 tablespoon of mustard oil (optional). Mix well to combine.</li>
+                        <li><strong>Shape the Litti:</strong> Divide the rested dough into equal portions (about 10-12). Flatten each portion and place a tablespoon of the sattu filling in the center. Gather the edges and seal them to form a ball. Gently flatten the ball to form a disc.</li>
+                        <li><strong>Cook the Litti:</strong> Preheat an oven or tandoor. If using an oven, set it to 200°C (392°F). Place the littis on a baking tray and bake for 20-25 minutes, turning them occasionally, until they are golden brown and cooked through. If using a tandoor, cook the littis until they are nicely charred and cooked.</li>
+                        <li><strong>Baste with Ghee:</strong> Remove the littis and baste them with ghee while they are hot.</li>
+                        <li><strong>For Chokha:</strong> Roast 1 large eggplant, 2 medium tomatoes, and 2 boiled potatoes over an open flame or in an oven until charred and cooked through. Once cooled, peel the charred skin off the eggplant and potatoes. In a mixing bowl, mash the roasted eggplant, tomatoes, and boiled potatoes together. Add 4-5 roasted garlic cloves, 1-2 finely chopped green chilies, 1 small finely chopped onion (optional), a handful of chopped coriander leaves, 1 tablespoon of mustard oil, and salt to taste. Mix well.</li>
+                        <li><strong>Serve:</strong> Serve the hot littis with the chokha on the side, along with extra ghee for dipping. Enjoy your authentic Litti Chokha!</li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+        <!-- Recipe Recommendations Section -->
+        <div class="recommendations">
+            <h2>You Can Also Try</h2>
+            <div class="recommendation-grid">
+                <a href="../recipe1.html" class="recommendation-item">
+                    <img src="../images/pakora.jpg" alt="Recipe 1">
+                </a>
+                <a href="../recipe2.html" class="recommendation-item">
+                    <img src="../images/kachori.jpg" alt="Recipe 2">
+                </a>
+                <a href="../recipe3.html" class="recommendation-item">
+                    <img src="../images/dhokla.jpg" alt="Recipe 3">
+                </a>
+                <a href="../recipe4.html" class="recommendation-item">
+                    <img src="../images/poha.jpg" alt="Recipe 4">
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Zaika. All rights reserved.</p>
+    </footer>
+    <script src="../script/food-script/litti_chokha.js"></script>
+</body>
+</html>

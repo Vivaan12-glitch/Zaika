@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puchka (Pani Puri) - Zaika</title>
+    <link rel="stylesheet" href="../style/recipes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body id="puchka">
+    <header class="header">
+        <h1 class="header-title">Zaika</h1>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../help.html">Help</a></li>
+                <li><a href="../profile.html"><img src="../images/person.png" id="userIcon" class="person-logo" alt="Person"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="recipe-detail">
+            <div class="recipe-card">
+                <div class="like-container">
+                    <i class="fa fa-heart like-btn"></i>
+                </div>
+                <div class="card-image">
+                    <img src="../images/puchka.jpg" alt="Puchka (Pani Puri)">
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Puchka (Pani Puri)</h3>
+                    <p class="card-description">Puchka, also known as Pani Puri, is a popular Indian street food consisting of hollow, crispy puris filled with spicy tamarind water, chickpeas, and potatoes.</p>
+                    <p class="card-time">Time: 30 minutes</p>
+                    <p class="card-protein">
+                        Protein:
+                        <ul>
+                            <li>Chickpeas (1 cup) provide around 15g of protein.</li>
+                            <li>Potatoes (if used) add minimal protein but contribute to the flavor.</li>
+                            <li>Semolina (1 cup) adds about 6g of protein.</li>
+                            <li>Coriander and mint add negligible protein but are rich in vitamins.</li>
+                            <li>Chaat masala may contain small amounts of protein depending on ingredients.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="details-card">
+                <h3 class="details-title">Recipe Details</h3>
+                <div class="details-section">
+                    <label for="people">Number of People:</label>
+                    <select id="people" name="people" onchange="updateIngredients()">
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+                <div class="details-section">
+                    <h3>Ingredients</h3>
+                    <ul id="ingredients-list">
+                        <!-- Ingredients will be populated here by JavaScript -->
+                    </ul>
+                </div>
+                
+                <div class="details-section">
+                    <div class="recipe-header">
+                        <h2>Steps to Make Puchka:</h2>
+                        <div class="audio-container">
+                            <p class="audio-caption">Listen to the instructions here:</p>
+                            <audio controls>
+                                <source src="../audio/puchka_audio.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <ol>
+                        <li><strong>Prepare the Puri:</strong>
+                            <ul>
+                                <li>In a bowl, combine 1 cup of semolina (sooji) and 2 tablespoons of all-purpose flour (maida). Add a pinch of salt.</li>
+                                <li>Gradually add water to form a smooth, stiff dough. Let it rest for about 30 minutes.</li>
+                                <li>Heat oil in a deep pan for frying.</li>
+                                <li>Take small portions of the dough and roll them into small balls. Roll each ball into thin circles.</li>
+                                <li>Fry the puris in hot oil until they puff up and turn golden brown. Remove and drain on paper towels.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Prepare the Filling:</strong>
+                            <ul>
+                                <li>Boil 1 cup of chickpeas and 2-3 medium-sized potatoes until soft.</li>
+                                <li>Peel and mash the potatoes, then mix with the boiled chickpeas.</li>
+                                <li>Add finely chopped onions, green chilies, and fresh coriander leaves.</li>
+                                <li>Season with salt, chaat masala, and lemon juice to taste.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Prepare the Pani (Spicy Water):</strong>
+                            <ul>
+                                <li>In a blender, combine 1 cup of fresh mint leaves, 1/2 cup of coriander leaves, 2-3 green chilies, a small piece of ginger, and 1/4 cup of tamarind pulp.</li>
+                                <li>Add water, salt, and a pinch of roasted cumin powder. Blend until smooth.</li>
+                                <li>Adjust the seasoning and dilute with water to your desired taste and spiciness.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Assemble the Puchka:</strong>
+                            <ul>
+                                <li>Gently crack the top of each puri to create an opening.</li>
+                                <li>Stuff each puri with the filling mixture.</li>
+                                <li>Dip the filled puri into the spicy pani or serve it on the side for dipping.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Serve Immediately:</strong>
+                            <ul>
+                                <li>Puchkas are best enjoyed immediately after assembling to maintain the crispiness of the puris.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+                <div class="details-section">
+                    <h3>Variations:</h3>
+                    <ul>
+                        <li><strong>Fruit Pani Puri:</strong> Add fruits like pomegranate or mango to the filling for a sweet twist.</li>
+                        <li><strong>Spicy Pani:</strong> Adjust the chili and spices in the pani for extra heat.</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- Recipe Recommendations Section -->
+        <div class="recommendations">
+            <h2>You Can Also Try</h2>
+            <div class="recommendation-grid">
+                <a href="../recipe1.html" class="recommendation-item">
+                    <img src="../images/pakora.jpg" alt="Recipe 1">
+                </a>
+                <a href="../recipe2.html" class="recommendation-item">
+                    <img src="../images/kachori.jpg" alt="Recipe 2">
+                </a>
+                <a href="../recipe3.html" class="recommendation-item">
+                    <img src="../images/dhokla.jpg" alt="Recipe 3">
+                </a>
+                <a href="../recipe4.html" class="recommendation-item">
+                    <img src="../images/poha.jpg" alt="Recipe 4">
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Zaika. All rights reserved.</p>
+    </footer>
+    <script src="../script/food-script/pani_puri.js"></script>
+</body>
+</html>

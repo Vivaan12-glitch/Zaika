@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Butter Chicken - Zaika</title>
+    <link rel="stylesheet" href="../style/recipes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body id="butter-chicken">
+    <header class="header">
+        <h1 class="header-title">Zaika</h1>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../help.html">Help</a></li>
+                <li><a href="../profile.html"><img src="../images/person.png" id="userIcon" class="person-logo" alt="Person"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="recipe-detail">
+            <div class="recipe-card">
+                <div class="like-container">
+                    <i class="fa fa-heart like-btn"></i>
+                </div>
+                <div class="card-image">
+                    <img src="../images/butter-chicken.jpg" alt="Butter Chicken">
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Butter Chicken</h3>
+                    <p class="card-description">Butter Chicken is a rich and creamy North Indian dish made with marinated chicken simmered in a fragrant tomato and cream-based sauce.</p>
+                    <p class="card-time">Time: 1 hour</p>
+                    <p class="card-protein">
+                        Protein:
+                        <ul>
+                            <li>Chicken (500g) provides around 110g of protein.</li>
+                            <li>Yogurt (1 cup) adds 10g of protein.</li>
+                            <li>Cream (1/2 cup) adds 4g of protein.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="details-card">
+                <h3 class="details-title">Recipe Details</h3>
+                <div class="details-section">
+                    <label for="people">Number of People:</label>
+                    <select id="people" name="people" onchange="updateIngredients()">
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+                <div class="details-section">
+                    <h3>Ingredients</h3>
+                    <ul id="ingredients-list">
+                        <!-- Ingredients will be populated here by JavaScript -->
+                    </ul>
+                </div>
+                
+                <div class="details-section">
+                    <div class="recipe-header">
+                        <h2>Steps to Make Butter Chicken:</h2>
+                        <div class="audio-container">
+                            <p class="audio-caption">Listen to the instructions here:</p>
+                            <audio controls>
+                                <source src="../audio/butterchicken.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <ol>
+                        <li>In a bowl, combine the yogurt, ginger-garlic paste, lemon juice, red chili powder, turmeric powder, garam masala, and salt.</li>
+                        <li>Add the chicken pieces to the marinade and mix well to coat. Cover and refrigerate for at least 1 hour (or overnight for best results).</li>
+                        <li>Heat a pan over medium heat and add a little oil. Add the marinated chicken pieces (discard excess marinade) and cook until fully cooked and slightly charred. Remove from heat and set aside.</li>
+                        <li>In the same pan, add butter and a tablespoon of oil. Once melted, add the chopped onions and sauté until golden brown.</li>
+                        <li>Add the slit green chilies and ginger-garlic paste, and sauté for a minute until fragrant.</li>
+                        <li>Pour in the tomato puree and cook for about 10-15 minutes, stirring occasionally until the oil separates from the sauce.</li>
+                        <li>Add red chili powder, garam masala, and cumin powder to the sauce. Stir well to combine.</li>
+                        <li>Add the cooked chicken pieces to the sauce and mix thoroughly.</li>
+                        <li>Lower the heat and stir in the cream and kasuri methi. Cook for an additional 5-10 minutes until everything is heated through and the flavors meld.</li>
+                        <li>Garnish with fresh coriander leaves and serve hot with naan, roti, or rice.</li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+        <!-- Recipe Recommendations Section -->
+        <div class="recommendations">
+            <h2>You Can Also Try</h2>
+            <div class="recommendation-grid">
+                <a href="../recipe1.html" class="recommendation-item">
+                    <img src="../images/tikka.jpg" alt="Recipe 1">
+                </a>
+                <a href="../recipe2.html" class="recommendation-item">
+                    <img src="../images/rogan-josh.jpg" alt="Recipe 2">
+                </a>
+                <a href="../recipe3.html" class="recommendation-item">
+                    <img src="../images/malai-kofta.jpg" alt="Recipe 3">
+                </a>
+                <a href="../recipe4.html" class="recommendation-item">
+                    <img src="../images/paneer-butter-masala.jpg" alt="Recipe 4">
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Zaika. All rights reserved.</p>
+    </footer>
+    <script src="../script/food-script/butterchicken.js"></script>
+</body>
+</html>

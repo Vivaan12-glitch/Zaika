@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarso da Saag with Makki di Roti - Zaika</title>
+    <link rel="stylesheet" href="../style/recipes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body id="sarso-da-saag">
+    <header class="header">
+        <h1 class="header-title">Zaika</h1>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../help.html">Help</a></li>
+                <li><a href="../profile.html"><img src="../images/person.png" id="userIcon" class="person-logo" alt="Person"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="recipe-detail">
+            <div class="recipe-card">
+                <div class="like-container">
+                    <i class="fa fa-heart like-btn"></i>
+                </div>
+                <div class="card-image">
+                    <img src="../images/Sarso da Saag with Makki di Roti.jpeg" alt="Sarso da Saag with Makki di Roti">
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Sarso da Saag with Makki di Roti</h3>
+                    <p class="card-description">A traditional Punjabi dish made from mustard greens and served with corn flour flatbread, perfect for winter meals.</p>
+                    <p class="card-time">Time: 40 minutes</p>
+                    <p class="card-protein">
+                        Protein:
+                        <ul>
+                            <li>Sarso da Saag provides approximately 3-5g of protein per serving (1 cup).</li>
+                            <li>Makki di Roti adds around 2-3g of protein per roti.</li>
+                            <li>Total Combined Protein: Approximately 5-8g per serving.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="details-card">
+                <h3 class="details-title">Recipe Details</h3>
+                <div class="details-section">
+                    <label for="people">Number of People:</label>
+                    <select id="people" name="people" onchange="updateIngredients()">
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+                <div class="details-section">
+                    <h3>Ingredients</h3>
+                    <ul id="ingredients-list">
+                        <!-- Ingredients will be populated here by JavaScript -->
+                    </ul>
+                </div>
+                
+                <div class="details-section">
+                    <div class="recipe-header">
+                        <h2>Steps to Make Sarso da Saag:</h2>
+                        <div class="audio-container">
+                            <p class="audio-caption">Listen to the instructions here:</p>
+                            <audio controls>
+                                <source src="../audio/sarso_da_saag_audio.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <ol>
+                        <li>Wash and chop 2 cups of mustard greens (sarson) and 1 cup of spinach (optional).</li>
+                        <li>In a large pot, add the chopped greens, 4 cups of water, and a pinch of salt. Cook over medium heat until the greens are tender (about 20-25 minutes).</li>
+                        <li>Once cooked, drain excess water if necessary and blend the greens to a smooth paste. Return the blended mixture to the pot.</li>
+                        <li>Add 2 tablespoons of butter or ghee, 1-2 tablespoons of maize flour (makki ka atta), and spices (like red chili powder, turmeric, and salt) to taste. Cook for another 10-15 minutes, stirring occasionally.</li>
+                    </ol>
+
+                    <div class="recipe-header">
+                        <h2>Steps to Make Makki di Roti:</h2>
+                    </div>
+                    
+                    <ol>
+                        <li>In a bowl, take 2 cups of maize flour (makki ka atta). Gradually add warm water and knead to form a smooth dough.</li>
+                        <li>Divide the dough into small balls. Flatten each ball into a round shape using your hands or a rolling pin, dusting with extra flour to prevent sticking.</li>
+                        <li>Heat a griddle (tawa) over medium heat. Place the roti on the griddle and cook for about 2-3 minutes on each side until golden brown. Optionally, brush with ghee while cooking.</li>
+                    </ol>
+                    
+                    <div class="recipe-header">
+                        <h2>Serving:</h2>
+                    </div>
+                    
+                    <p>Serve the hot Sarso da Saag topped with a dollop of ghee alongside Makki di Roti. Enjoy with a side of pickles and yogurt for a complete meal!</p>
+                </div>
+                <div class="details-section">
+                    <h3>Variations:</h3>
+                    <ul>
+                        <li><strong>Spicy Saag:</strong> Add chopped green chilies for extra heat.</li>
+                        <li><strong>Cheesy Saag:</strong> Stir in some grated cheese for a creamy texture.</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- Recipe Recommendations Section -->
+        <div class="recommendations">
+            <h2>You Can Also Try</h2>
+            <div class="recommendation-grid">
+                <a href="../recipe1.html" class="recommendation-item">
+                    <img src="../images/pakora.jpg" alt="Recipe 1">
+                </a>
+                <a href="../recipe2.html" class="recommendation-item">
+                    <img src="../images/kachori.jpg" alt="Recipe 2">
+                </a>
+                <a href="../recipe3.html" class="recommendation-item">
+                    <img src="../images/dhokla.jpg" alt="Recipe 3">
+                </a>
+                <a href="../recipe4.html" class="recommendation-item">
+                    <img src="../images/poha.jpg" alt="Recipe 4">
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Zaika. All rights reserved.</p>
+    </footer>
+    <script src="../script/food-script/sarso-da-saag.js"></script>
+</body>
+</html>

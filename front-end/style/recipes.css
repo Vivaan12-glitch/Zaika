@@ -1,0 +1,329 @@
+/* General styles */
+body {
+    font-family: 'Solway', serif;
+    margin: 0;
+    padding: 0px;
+    background-color: rgba(255, 222, 157, 0.754);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+
+/* Header Style */
+header {
+    background-color:black;
+    color: rgb(255, 255, 255);
+    padding: 7px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: smaller;
+}
+
+header h1 {
+    font-family: 'Berkshire Swash', cursive;
+    margin: 0;
+    font-size: 3em; /* Adjust size as needed */
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    padding-right: 33px;
+}
+
+header .person-logo {
+    margin-left: 20px; /* Adjust as needed */
+}
+
+/* Add styles for the person logo */
+.person-logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-right: 35px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+
+nav ul li select {
+    font-family: 'Solway', serif;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns%3D%22http://www.w3.org/2000/svg%22 width%3D%2210%22 height%3D%225%22 viewBox%3D%220 0 10 5%22%3E%3Cpath fill%3D%22%23fff%22 d%3D%22M0 0l5 5 5-5z%22/%3E%3C/svg%3E');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 30px;
+}
+
+nav ul li select option {
+    color: black;
+}
+
+/* Recipe Card Styles */
+.recipe-card {
+    display: flex; /* Flexbox for horizontal layout */
+    background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%); /* Gradient background for a modern look */
+    border: 1px solid #ddd;
+    border-radius: 15px; /* More rounded corners */
+    width: 80%;
+    margin: 120px auto 40px; /* Increased top margin for space from header */
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow for more depth */
+    align-items: center; /* Center items vertically */
+}
+
+/* Like Button Container */
+.like-container {
+    position: absolute;
+    top: 200px;
+    right: 145px;
+}
+
+/* Like Button (Heart Icon) */
+.like-btn {
+    font-size: 24px;
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Liked State */
+.liked {
+    color: rgb(255, 0, 81);
+    transform: scale(1.2); /* Scale effect when liked */
+}
+
+/* Card Image */
+.card-image {
+    flex: 1; /* Flex grow to take up space */
+    margin-right: 20px; /* Space between image and details */
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px; /* Slightly rounded corners */
+    border: 2px solid #ddd; /* Border to make the image stand out */
+}
+
+/* Card Info */
+.card-info {
+    flex: 2; /* Flex grow to take up more space */
+    font-family: 'Solway', serif;
+    background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%); /* Gradient background for depth */
+    border-radius: 15px; /* More rounded corners for a softer look */
+}
+
+/* Card Title Styling */
+.card-title {
+    font-size: 3em; /* Increased font size for greater emphasis */
+    color: #e74c3c; /* Highlight color for the title */
+    margin: 0;
+    padding-bottom: 15px; /* Spacing below the title */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Slight shadow for text depth */
+}
+
+/* Card Description, Time, and Protein Styling */
+.card-description, .card-time, .card-protein {
+    font-size: 20px;
+    color: #232222;
+}
+
+/* Styling for .card-time */
+.card-time {
+    color: #00b029; /* Changed color to green */
+    font-weight: bold;
+    font-size: 22px; /* Increased font size for better visibility */
+}
+
+/* Styling for .card-protein list */
+.card-protein ul {
+    padding-left: 20px; /* Indent list items */
+    list-style-type: disc; /* Disc style for list items */
+}
+
+.card-protein ul li {
+    margin-bottom: 12px; /* Increased spacing between list items */
+    font-size: 1.1em; /* Slightly larger font size for list items */
+    color: #555; /* Slightly lighter color for readability */
+    position: relative;
+}
+
+/* Adding a custom bullet point */
+.card-protein ul li::before {
+    content: '•'; /* Custom bullet character */
+    color: #e74c3c; /* Color for the bullet */
+    font-size: 1.5em; /* Size of the bullet */
+    position: absolute;
+    left: -20px; /* Positioning the bullet */
+    top: 0;
+}
+
+/* Styles for the new details card */
+.details-card {
+    background: linear-gradient(135deg, #ffffff 0%, #f9f9f9 100%); /* Gradient background for a modern look */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Deeper shadow for more depth */
+}
+
+.details-title {
+    font-size: 2em;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.details-section {
+    margin-bottom: 20px;
+}
+
+.details-section label {
+    font-weight: bold;
+    color: #333; /* Darker color for labels */
+}
+
+.details-section select {
+    font-family: 'Solway', serif;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px; /* Slightly rounded corners */
+    border: 1px solid #ddd; /* Border for better visibility */
+}
+
+.details-section ul,
+.details-section ol {
+    padding-left: 20px;
+}
+
+.details-section ul li,
+.details-section ol li {
+    margin-bottom: 12px;
+}
+
+/* Styles for the Featured Recipes section */
+/* Styling for Recommendations Section */
+.recommendations {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.recommendations h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+/* Grid Layout for Recommendations */
+.recommendation-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between items */
+}
+
+.recommendation-item {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 120px; /* Adjust size as needed */
+    height: 120px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.recommendation-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.recommendation-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.recipe-header {
+    display: flex;
+    justify-content: space-between; /* This places items on the same line with space in between */
+    align-items: center;            /* Vertically centers the items */
+    margin-bottom: 20px;            /* Add some margin below for spacing */
+    padding-right: 20px;
+}
+
+.recipe-header h2 {
+    margin: 0;                      /* Remove default margin from h2 */
+    font-size: 24px;                /* Set font size for the heading */
+    font-weight: bold;              /* Make the font bold */
+}
+
+.audio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;            /* Centers the caption and audio player */
+ 
+}
+
+.audio-caption {
+    font-size: 16px;               /* Increased size for noticeability */
+    color: #e74c3c;                /* Bright, noticeable color */
+    font-weight: bold;             /* Slightly bold font */
+    margin-bottom: 5px;            /* Space between caption and audio player */
+    text-align: center;            /* Center-align the text */
+}
+
+
+/* Footer */
+footer {
+    background-color: rgba(55, 52, 52, 0.8);
+    color: #333f;
+    text-align: center;
+    margin-top: auto;
+}
+
+
+@media (max-width: 600px) {
+    .recipe-card {
+        flex-direction: column;
+        width: 95%;
+    }
+    
+    .card-image, .card-info {
+        width: 100%;
+        margin-right: 0; /* Remove margin for mobile view */
+    }
+}

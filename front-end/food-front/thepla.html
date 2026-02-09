@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thepla - Zaika</title>
+    <link rel="stylesheet" href="../style/recipes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body id="thepla">
+    <header class="header">
+        <h1 class="header-title">Zaika</h1>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../help.html">Help</a></li>
+                <li><a href="../profile.html"><img src="../images/person.png" id="userIcon" class="person-logo" alt="Person"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="recipe-detail">
+            <div class="recipe-card">
+                <div class="like-container">
+                    <i class="fa fa-heart like-btn"></i>
+                </div>
+                <div class="card-image">
+                    <img src="../images/Thepla.jpg" alt="Thepla">
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Thepla</h3>
+                    <p class="card-description">Thepla is a traditional Gujarati flatbread made with whole wheat flour, spices, and fenugreek leaves, perfect for breakfast or as a snack.</p>
+                    <p class="card-time">Time: 25 minutes</p>
+                    <p class="card-protein">
+                        Protein:
+                        <ul>
+                            <li>Whole wheat flour (1 cup) provides around 13g of protein.</li>
+                            <li>Fenugreek leaves enhance nutritional value.</li>
+                            <li>Spices like cumin contribute small amounts of protein, though they are primarily used for flavor.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="details-card">
+                <h3 class="details-title">Recipe Details</h3>
+                <div class="details-section">
+                    <label for="people">Number of People:</label>
+                    <select id="people" name="people" onchange="updateIngredients()">
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+                <div class="details-section">
+                    <h3>Ingredients</h3>
+                    <ul id="ingredients-list">
+                        <!-- Ingredients will be populated here by JavaScript -->
+                    </ul>
+                </div>
+                
+                <div class="details-section">
+                    <div class="recipe-header">
+                        <h2>Steps to Make Thepla:</h2>
+                        <div class="audio-container">
+                            <p class="audio-caption">Listen to the instructions here:</p>
+                            <audio controls>
+                                <source src="../audio/theplaaudio.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <ol>
+                        <li>In a large bowl, mix 2 cups of whole wheat flour, 1 teaspoon of turmeric powder, 1 teaspoon of red chili powder, 1 teaspoon of cumin powder, and 1 teaspoon of salt.</li>
+                        <li>Add 1 cup of finely chopped fresh fenugreek leaves (methi) and mix well.</li>
+                        <li>Gradually add water as needed to knead the mixture into a smooth and soft dough.</li>
+                        <li>Cover the dough with a damp cloth and let it rest for about 15-20 minutes.</li>
+                        <li>After resting, divide the dough into equal-sized balls (about the size of a golf ball).</li>
+                        <li>Dust a rolling surface with flour and roll each ball into a thin circle (about 6-7 inches in diameter).</li>
+                        <li>Heat a tava (griddle) over medium heat.</li>
+                        <li>Once hot, place the rolled thepla on the tava and cook for about 30 seconds, then flip it over.</li>
+                        <li>Brush a little oil or ghee on the cooked side, and flip it again. Cook until both sides are golden brown and cooked through, about 1-2 minutes on each side.</li>
+                        <li>Remove from the tava and place it on a plate. Serve hot with yogurt, pickle, or any chutney of your choice.</li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+        <!-- Recipe Recommendations Section -->
+        <div class="recommendations">
+            <h2>You Can Also Try</h2>
+            <div class="recommendation-grid">
+                <a href="../recipe1.html" class="recommendation-item">
+                    <img src="../images/pakora.jpg" alt="Recipe 1">
+                </a>
+                <a href="../recipe2.html" class="recommendation-item">
+                    <img src="../images/kachori.jpg" alt="Recipe 2">
+                </a>
+                <a href="../recipe3.html" class="recommendation-item">
+                    <img src="../images/idli.jpg" alt="Recipe 3">
+                </a>
+                <a href="../recipe4.html" class="recommendation-item">
+                    <img src="../images/poha.jpg" alt="Recipe 4">
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Zaika. All rights reserved.</p>
+    </footer>
+    <script src="../script/food-script/thepla.js"></script>
+</body>
+</html>

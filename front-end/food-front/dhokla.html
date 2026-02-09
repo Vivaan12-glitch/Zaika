@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhokla - Zaika</title>
+    <link rel="stylesheet" href="../style/recipes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body id="dhokla">
+    <header class="header">
+        <h1 class="header-title">Zaika</h1>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../help.html">Help</a></li>
+                <li><a href="../profile.html"><img src="../images/person.png" id="userIcon" class="person-logo" alt="Person"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="recipe-detail">
+            <div class="recipe-card">
+                <div class="like-container">
+                    <i class="fa fa-heart like-btn"></i>
+                </div>
+                <div class="card-image">
+                    <img src="../images/Dhokla.jpg" alt="Dhokla">
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Dhokla</h3>
+                    <p class="card-description">Dhokla is a fluffy and savory steamed cake made from fermented chickpea batter, popular in Gujarat, India. It's often served as a snack or breakfast dish.</p>
+                    <p class="card-time">Time: 30 minutes (plus fermentation time)</p>
+                    <p class="card-protein">
+                        Protein:
+                        <ul>
+                            <li>Chickpea flour (1 cup) provides around 22g of protein.</li>
+                            <li>A typical serving (100 grams) may provide around 6-8 grams of protein.</li>
+                            <li>The fermentation process enhances protein digestibility and bioavailability.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="details-card">
+                <h3 class="details-title">Recipe Details</h3>
+                <div class="details-section">
+                    <label for="people">Number of People:</label>
+                    <select id="people" name="people" onchange="updateIngredients()">
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+                <div class="details-section">
+                    <h3>Ingredients</h3>
+                    <ul id="ingredients-list">
+                        <!-- Ingredients will be populated here by JavaScript -->
+                    </ul>
+                </div>
+                
+                <div class="details-section">
+                    <div class="recipe-header">
+                        <h2>Steps to Make Dhokla:</h2>
+                        <div class="audio-container">
+                            <p class="audio-caption">Listen to the instructions here:</p>
+                            <audio controls>
+                                <source src="../audio/dhoklaaudio.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <ol>
+                        <li>In a large bowl, combine 1 cup of chickpea flour, 1 tablespoon of ginger-green chili paste, 1 tablespoon of lemon juice, and salt to taste.</li>
+                        <li>Add water gradually to form a smooth batter, and mix well. Allow the batter to ferment for 8-12 hours in a warm place.</li>
+                        <li>Once fermented, add 1 teaspoon of baking soda and mix gently. Prepare a steaming pot by boiling water.</li>
+                        <li>Grease a flat dish or a dhokla pan with oil. Pour the batter into the greased dish and spread evenly.</li>
+                        <li>Place the dish in the steamer and steam for about 15-20 minutes, or until a toothpick inserted in the center comes out clean.</li>
+                        <li>Remove the dish from the steamer and let it cool slightly. Cut into square pieces.</li>
+                        <li>For tempering, heat 1 tablespoon of oil, add mustard seeds, and let them splutter. Pour this tempering over the dhokla pieces.</li>
+                        <li>Serve hot with green chutney and tamarind chutney.</li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+        <!-- Recipe Recommendations Section -->
+        <div class="recommendations">
+            <h2>You Can Also Try</h2>
+            <div class="recommendation-grid">
+                <a href="../recipe1.html" class="recommendation-item">
+                    <img src="../images/pakora.jpg" alt="Recipe 1">
+                </a>
+                <a href="../recipe2.html" class="recommendation-item">
+                    <img src="../images/kachori.jpg" alt="Recipe 2">
+                </a>
+                <a href="../recipe3.html" class="recommendation-item">
+                    <img src="../images/idli.jpg" alt="Recipe 3">
+                </a>
+                <a href="../recipe4.html" class="recommendation-item">
+                    <img src="../images/poha.jpg" alt="Recipe 4">
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Zaika. All rights reserved.</p>
+    </footer>
+    <script src="../script/food-script/dhokla.js"></script>
+</body>
+</html>

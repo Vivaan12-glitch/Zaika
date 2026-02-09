@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dosa - Zaika</title>
+    <link rel="stylesheet" href="../style/recipes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body id="dosa">
+    <header class="header">
+        <h1 class="header-title">Zaika</h1>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../help.html">Help</a></li>
+                <li><a href="../profile.html"><img src="../images/person.png" id="userIcon" class="person-logo" alt="Person"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="recipe-detail">
+            <div class="recipe-card">
+                <div class="like-container">
+                    <i class="fa fa-heart like-btn"></i>
+                </div>
+                <div class="card-image">
+                    <img src="../images/dosa.jpg" alt="Dosa">
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Dosa</h3>
+                    <p class="card-description">Dosa is a thin, crispy pancake made from fermented rice and lentil batter. It is a popular South Indian dish, usually served with sambar and chutney.</p>
+                    <p class="card-time">Time: 30 minutes (plus soaking and fermentation)</p>
+                    <p class="card-protein">
+                        Protein:
+                        <ul>
+                            <li>Rice (1 cup) provides around 4g of protein.</li>
+                            <li>Urad dal (1/2 cup) adds about 13g of protein.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="details-card">
+                <h3 class="details-title">Recipe Details</h3>
+                <div class="details-section">
+                    <label for="people">Number of People:</label>
+                    <select id="people" name="people" onchange="updateIngredients()">
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+                <div class="details-section">
+                    <h3>Ingredients</h3>
+                    <ul id="ingredients-list">
+                        <!-- Ingredients will be populated here by JavaScript -->
+                    </ul>
+                </div>
+                
+                <div class="details-section">
+                    <div class="recipe-header">
+                        <h2>Steps to Make Dosa:</h2>
+                        <div class="audio-container">
+                            <p class="audio-caption">Listen to the instructions here:</p>
+                            <audio controls>
+                                <source src="../audio/Dosa.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <ol>
+                        <li><strong>Soak the Ingredients:</strong>
+                            <ul>
+                                <li>Rinse the urad dal, rice, and fenugreek seeds (if using) separately.</li>
+                                <li>Soak them in water for at least 4-6 hours or overnight.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Grind the Batter:</strong>
+                            <ul>
+                                <li>Drain the soaked ingredients.</li>
+                                <li>In a blender or wet grinder, combine the urad dal and fenugreek seeds with a little water. Blend until smooth and creamy.</li>
+                                <li>Add the rice and blend until you achieve a slightly coarse texture (you can add more water as needed).</li>
+                                <li>Transfer the batter to a large bowl, cover, and let it ferment for 8-12 hours in a warm place until it doubles in volume.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Prepare the Dosa:</strong>
+                            <ul>
+                                <li>Once the batter is fermented, gently stir it and add salt to taste.</li>
+                                <li>Heat a non-stick or cast-iron skillet on medium heat. Lightly grease it with oil or ghee.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Cook the Dosa:</strong>
+                            <ul>
+                                <li>Pour a ladleful of batter onto the skillet and spread it in a circular motion to form a thin layer.</li>
+                                <li>Drizzle a little oil or ghee around the edges and on top of the dosa.</li>
+                                <li>Cook until the edges start to lift and the bottom turns golden brown (about 2-3 minutes).</li>
+                            </ul>
+                        </li>
+                        <li><strong>Flip and Serve:</strong>
+                            <ul>
+                                <li>If desired, flip the dosa and cook for an additional 30 seconds.</li>
+                                <li>Remove the dosa from the skillet and keep it warm. Repeat with the remaining batter.</li>
+                                <li>Serve hot with coconut chutney, sambar, or any side dish of your choice.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+        <!-- Recipe Recommendations Section -->
+        <div class="recommendations">
+            <h2>You Can Also Try</h2>
+            <div class="recommendation-grid">
+                <a href="../recipe1.html" class="recommendation-item">
+                    <img src="../images/pakora.jpg" alt="Recipe 1">
+                </a>
+                <a href="../recipe2.html" class="recommendation-item">
+                    <img src="../images/kachori.jpg" alt="Recipe 2">
+                </a>
+                <a href="../recipe3.html" class="recommendation-item">
+                    <img src="../images/dhokla.jpg" alt="Recipe 3">
+                </a>
+                <a href="../recipe4.html" class="recommendation-item">
+                    <img src="../images/poha.jpg" alt="Recipe 4">
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Zaika. All rights reserved.</p>
+    </footer>
+    <script src="../script/food-script/dosa.js"></script>
+</body>
+</html>

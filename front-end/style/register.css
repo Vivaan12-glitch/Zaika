@@ -1,0 +1,183 @@
+/* General styles */
+body {
+    font-family: 'Solway', serif;
+    margin: 0;
+    padding: 0px;
+    background-color: black;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+
+/* Header Style */
+header {
+    background-color:rgba(255, 255, 255, 0.148);
+    color: rgb(255, 255, 255);
+    padding: 7px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: smaller;
+}
+
+header h1 {
+    font-family: 'Berkshire Swash', cursive;
+    margin: 0;
+    font-size: 3em; /* Adjust size as needed */
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    padding-right: 33px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-right: 35px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+}
+
+/* Register card layout */
+.register-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 750px;
+    height: 472px;
+    margin: 50px auto;
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register-image {
+    padding: 20px;
+}
+
+.register-image img {
+    width: 315px;
+    height: 430px;
+    border-radius: 10px;
+}
+
+.register-form {
+    flex: 1;
+    padding: 27px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.register-form h2 {
+    margin-bottom: 20px;
+    color: black;
+}
+
+.register-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: black;
+    padding-right: 250px;
+}
+
+.register-form input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 40%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background: url('../images/eye.png') no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    background-color: darkgreen;
+}
+
+.message a {
+    color: black;
+}
+
+/* Social login section */
+.social-login {
+    margin-top: 20px;
+}
+
+.social-login p {
+    color: black;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.social-icons img:hover {
+    opacity: 0.8;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(55, 52, 52, 0.615);
+    color: #848282;
+    text-align: center;
+    margin-top: auto;
+    padding: 3px;
+}

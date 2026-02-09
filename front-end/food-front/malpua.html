@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malpua - Zaika</title>
+    <link rel="stylesheet" href="../style/recipes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body id="malpua">
+    <header class="header">
+        <h1 class="header-title">Zaika</h1>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../help.html">Help</a></li>
+                <li><a href="../profile.html"><img src="../images/person.png" id="userIcon" class="person-logo" alt="Person"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="recipe-detail">
+            <div class="recipe-card">
+                <div class="like-container">
+                    <i class="fa fa-heart like-btn"></i>
+                </div>
+                <div class="card-image">
+                    <img src="../images/malpua.jpg" alt="Malpua">
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Malpua</h3>
+                    <p class="card-description">Malpua is a traditional Indian sweet made from a batter of flour, sugar, and ripe bananas, deep-fried to golden perfection and often served with rabri (sweetened condensed milk).</p>
+                    <p class="card-time">Time: 45 minutes</p>
+                    <p class="card-protein">
+                        Protein:
+                        <ul>
+                            <li>Flour (1 cup) provides approximately 10g of protein.</li>
+                            <li>Milk (1 cup) adds about 8g of protein.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="details-card">
+                <h3 class="details-title">Recipe Details</h3>
+                <div class="details-section">
+                    <label for="people">Number of People:</label>
+                    <select id="people" name="people" onchange="updateIngredients()">
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+                <div class="details-section">
+                    <h3>Ingredients</h3>
+                    <ul id="ingredients-list">
+                        <!-- Ingredients will be populated here by JavaScript -->
+                    </ul>
+                </div>
+                
+                <div class="details-section">
+                    <div class="recipe-header">
+                        <h2>Steps to Make Malpua:</h2>
+                        <div class="audio-container">
+                            <p class="audio-caption">Listen to the instructions here:</p>
+                            <audio controls>
+                                <source src="../audio/malpua.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <ol>
+                        <li>In a mixing bowl, combine 1 cup of all-purpose flour (maida) and 1/2 cup of semolina (rava).</li>
+                        <li>Add 3/4 cup of sugar, 1 ripe mashed banana, and 1 cup of milk (adjust as needed) to the dry ingredients. Mix well until you have a smooth batter, adjusting with water if necessary.</li>
+                        <li>Stir in 1/2 teaspoon of cardamom powder, 1/2 teaspoon of fennel seeds (optional), and 1/2 teaspoon of baking powder.</li>
+                        <li>Let the batter rest for about 15-30 minutes to soften the mixture.</li>
+                        <li>In a deep pan or kadhai, heat ghee or oil for frying. Ensure the oil is hot enough but not smoking.</li>
+                        <li>Once the oil is hot, pour a ladleful of batter into the oil, spreading it slightly to form a round shape. Fry until the edges turn golden brown, then flip and cook the other side until golden.</li>
+                        <li>Remove the fried Malpua from the oil and place them on paper towels to absorb excess oil.</li>
+                        <li>If desired, prepare sugar syrup by boiling 1 cup of sugar with 1 cup of water until it reaches a one-string consistency. Add crushed cardamom pods and saffron for flavor.</li>
+                        <li>If using sugar syrup, dip the hot Malpua in the syrup for a few seconds to soak.</li>
+                        <li>Garnish with chopped nuts (cashews, almonds) and grated coconut if desired.</li>
+                        <li>Serve warm or at room temperature as a delicious dessert or snack.</li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+        <!-- Recipe Recommendations Section -->
+        <div class="recommendations">
+            <h2>You Can Also Try</h2>
+            <div class="recommendation-grid">
+                <a href="../recipe1.html" class="recommendation-item">
+                    <img src="../images/pakora.jpg" alt="Recipe 1">
+                </a>
+                <a href="../recipe2.html" class="recommendation-item">
+                    <img src="../images/kachori.jpg" alt="Recipe 2">
+                </a>
+                <a href="../recipe3.html" class="recommendation-item">
+                    <img src="../images/dhokla.jpg" alt="Recipe 3">
+                </a>
+                <a href="../recipe4.html" class="recommendation-item">
+                    <img src="../images/poha.jpg" alt="Recipe 4">
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Zaika. All rights reserved.</p>
+    </footer>
+    <script src="../script/food-script/malpua.js"></script>
+</body>
+</html>

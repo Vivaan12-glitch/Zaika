@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samosa - Zaika</title>
+    <link rel="stylesheet" href="../style/recipes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body id="samosa">
+    <header class="header">
+        <h1 class="header-title">Zaika</h1>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../help.html">Help</a></li>
+                <li><a href="../profile.html"><img src="../images/person.png" id="userIcon" class="person-logo" alt="Person"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="recipe-detail">
+            <div class="recipe-card">
+                <div class="like-container">
+                    <i class="fa fa-heart like-btn"></i>
+                </div>
+                <div class="card-image">
+                    <img src="../images/samosa.jpg" alt="Samosa">
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Samosa</h3>
+                    <p class="card-description">Samosa is a popular Indian snack, made of spiced potatoes and peas stuffed in a crispy pastry shell, deep-fried to golden perfection.</p>
+                    <p class="card-time">Time: 30 minutes</p>
+                    <p class="card-protein">
+                        Protein:
+                        <ul>
+                            <li>Potatoes (3 large) provide around 8g of protein.</li>
+                            <li>Green peas (1 cup) add 8g of protein.</li>
+                            <li>Chickpea flour (if used) adds 22g of protein per cup.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="details-card">
+                <h3 class="details-title">Recipe Details</h3>
+                <div class="details-section">
+                    <label for="people">Number of People:</label>
+                    <select id="people" name="people" onchange="updateIngredients()">
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+                <div class="details-section">
+                    <h3>Ingredients</h3>
+                    <ul id="ingredients-list">
+                        <!-- Ingredients will be populated here by JavaScript -->
+                    </ul>
+                </div>
+                
+                <div class="details-section">
+                    <div class="recipe-header">
+                        <h2>Steps to Make Samosa:</h2>
+                        <div class="audio-container">
+                            <p class="audio-caption">Listen to the instructions here:</p>
+                            <audio controls>
+                                <source src="../audio/samosa.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <ol>
+                        <li>In a mixing bowl, combine all-purpose flour, semolina (if using), salt, and oil or ghee. Mix well. Gradually add water and knead to form a smooth and firm dough. Cover it with a damp cloth and let it rest for about 30 minutes.</li>
+                        <li>In a large bowl, mix the mashed potatoes, green peas, finely chopped onions, green chilies, ginger-garlic paste, cumin seeds, fennel seeds, mustard seeds, turmeric powder, red chili powder, coriander powder, garam masala, salt, chopped coriander leaves, and lemon juice (if using). Mix well until combined.</li>
+                        <li>Divide the rested dough into equal-sized balls (about the size of a golf ball) and roll each ball into a thin circle. Cut each circle in half to form two semicircles. Take one semicircle and form a cone shape by folding it. Seal the edge with a little water.</li>
+                        <li>Fill the cone with the prepared filling, leaving a little space at the top. Seal the open edge by pressing it down with your fingers or using a little water.</li>
+                        <li>Heat oil in a deep frying pan over medium heat. Once the oil is hot, carefully add the samosas in batches. Fry until they turn golden brown and crisp, turning them occasionally for even cooking. Remove the samosas with a slotted spoon and drain on paper towels to remove excess oil.</li>
+                        <li>Serve hot with tamarind chutney or green chutney.</li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+        <!-- Recipe Recommendations Section -->
+        <div class="recommendations">
+            <h2>You Can Also Try</h2>
+            <div class="recommendation-grid">
+                <a href="../recipe1.html" class="recommendation-item">
+                    <img src="../images/pakora.jpg" alt="Recipe 1">
+                </a>
+                <a href="../recipe2.html" class="recommendation-item">
+                    <img src="../images/kachori.jpg" alt="Recipe 2">
+                </a>
+                <a href="../recipe3.html" class="recommendation-item">
+                    <img src="../images/dhokla.jpg" alt="Recipe 3">
+                </a>
+                <a href="../recipe4.html" class="recommendation-item">
+                    <img src="../images/poha.jpg" alt="Recipe 4">
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Zaika. All rights reserved.</p>
+    </footer>
+    <script src="../script/food-script/samosa.js"></script>
+</body>
+</html>

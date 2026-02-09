@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mishti Doi - Zaika</title>
+    <link rel="stylesheet" href="../style/recipes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Solway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body id="mishti-doi">
+    <header class="header">
+        <h1 class="header-title">Zaika</h1>
+        <nav class="header-nav">
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../help.html">Help</a></li>
+                <li><a href="../profile.html"><img src="../images/person.png" id="userIcon" class="person-logo" alt="Person"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="recipe-detail">
+            <div class="recipe-card">
+                <div class="like-container">
+                    <i class="fa fa-heart like-btn"></i>
+                </div>
+                <div class="card-image">
+                    <img src="../images/mishtidoi.jpg" alt="Mishti Doi">
+                </div>
+                <div class="card-info">
+                    <h3 class="card-title">Mishti Doi</h3>
+                    <p class="card-description">Mishti Doi is a traditional Bengali dessert made from sweetened yogurt, often flavored with cardamom and served in clay pots.</p>
+                    <p class="card-time">Time: 12 hours (including setting time)</p>
+                    <p class="card-protein">
+                        Protein:
+                        <ul>
+                            <li>Yogurt (1 cup) provides around 8g of protein.</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+            <div class="details-card">
+                <h3 class="details-title">Recipe Details</h3>
+                <div class="details-section">
+                    <label for="people">Number of People:</label>
+                    <select id="people" name="people" onchange="updateIngredients()">
+                        <option value="2">2</option>
+                        <option value="4">4</option>
+                        <option value="6">6</option>
+                        <option value="8">8</option>
+                    </select>
+                </div>
+                <div class="details-section">
+                    <h3>Ingredients</h3>
+                    <ul id="ingredients-list">
+                        <!-- Ingredients will be populated here by JavaScript -->
+                    </ul>
+                </div>
+                
+                <div class="details-section">
+                    <div class="recipe-header">
+                        <h2>Steps to Make Mishti Doi:</h2>
+                        <div class="audio-container">
+                            <p class="audio-caption">Listen to the instructions here:</p>
+                            <audio controls>
+                                <source src="../audio/mishti_doi_audio.mp3" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                            </audio>
+                        </div>
+                    </div>
+                    
+                    <ol>
+                        <li>In a heavy-bottomed pan, bring 1 liter of full-fat milk to a boil. Stir occasionally to prevent it from sticking to the bottom.</li>
+                        <li>Once it reaches a boil, reduce the heat and let it simmer for about 10-15 minutes, stirring frequently until it thickens slightly.</li>
+                        <li>Stir in 1/2 cup of sugar and 1/2 teaspoon of cardamom powder into the hot milk. Mix well until the sugar dissolves completely.</li>
+                        <li>Remove the pan from heat and let the milk mixture cool down to a warm temperature (around 40-45°C or 104-113°F).</li>
+                        <li>In a small bowl, mix 2 tablespoons of plain, unsweetened yogurt with a little bit of the warm milk to temper it. Then, pour this mixture back into the rest of the warm milk. Stir gently to combine.</li>
+                        <li>Pour the mixture into clean clay pots or a glass container. Cover it with a lid or a cloth to keep it warm. Let it sit undisturbed in a warm place for about 6-8 hours, or until it sets and becomes thick.</li>
+                        <li>Once set, refrigerate the Misti Doi for a few hours to cool completely.</li>
+                        <li>Before serving, you can garnish with chopped nuts (like almonds or pistachios) and a few strands of saffron if desired.</li>
+                        <li>Serve the Misti Doi chilled as a delightful dessert. Enjoy your sweet and creamy Misti Doi!</li>
+                    </ol>
+                </div>
+            </div>
+        </article>
+
+        <!-- Recipe Recommendations Section -->
+        <div class="recommendations">
+            <h2>You Can Also Try</h2>
+            <div class="recommendation-grid">
+                <a href="../recipe1.html" class="recommendation-item">
+                    <img src="../images/pakora.jpg" alt="Recipe 1">
+                </a>
+                <a href="../recipe2.html" class="recommendation-item">
+                    <img src="../images/kachori.jpg" alt="Recipe 2">
+                </a>
+                <a href="../recipe3.html" class="recommendation-item">
+                    <img src="../images/dhokla.jpg" alt="Recipe 3">
+                </a>
+                <a href="../recipe4.html" class="recommendation-item">
+                    <img src="../images/poha.jpg" alt="Recipe 4">
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Zaika. All rights reserved.</p>
+    </footer>
+    <script src="../script/food-script/mishti_doi.js"></script>
+</body>
+</html>
